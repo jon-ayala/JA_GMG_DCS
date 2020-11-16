@@ -1,4 +1,4 @@
--- Gallery Media Group Data Case Study 
+-- GMG Data Case Study 
 
 -- Creating Database
 CREATE DATABASE gmg;
@@ -67,7 +67,7 @@ WHERE user_id NOT IN (SELECT user_id
 SELECT DISTINCT page_referrer
 FROM pageviews
 WHERE page_referrer IS NOT NULL
-AND page_referrer NOT LIKE '%purewow%';
+AND page_referrer NOT LIKE '%pw%';
 
 -- Exploring the NULL campaigns for more detail
 SELECT *
